@@ -1,32 +1,3 @@
-"""
-Vantage — 3D Car Customizer with Webcam Hand-Gesture Control
-Desktop application: PyOpenGL renders a car that assembles itself on screen
-(dots -> wireframe -> solid), standing in a minimal scene next to a small
-avatar. OpenCV + MediaPipe read your webcam and turn hand poses into car
-controls. Mouse and keyboard always work as a fallback.
-
-Dependencies (install with pip):
-    pip install pygame PyOpenGL PyOpenGL_accelerate opencv-python mediapipe numpy
-
-Run:
-    python car_customizer.py
-
-Controls:
-    Mouse drag             orbit the camera        Scroll wheel        zoom camera
-    Left / Right arrows    rotate the car           Up / Down arrows   tilt camera
-    1-7                    pick paint color         w / l / p / i      cycle wheels / lights / spoiler / interior
-    r                      replay the build-up      Space              skip straight to the finished car
-    g                      toggle hand gestures     s                  save configuration
-    Esc or q               quit
-
-Hand gestures (once enabled with 'g'):
-    Open hand, swipe left/right      -> rotate the car a step left/right
-    Open hand, twist your wrist      -> rotate the car smoothly (like a knob)
-    Pinch (thumb + index), then
-      move up / move down            -> zoom the camera in/out
-    Hold up 1-4 fingers               -> jump straight to that paint color (1st-4th swatch)
-    Closed fist                      -> pause / resume the animation
-"""
 
 import math
 import time
